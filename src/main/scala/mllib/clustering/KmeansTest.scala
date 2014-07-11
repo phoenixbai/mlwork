@@ -45,7 +45,7 @@ object KmeansTest {
     val result = data.zip(predictions).map( v =>
             v._1.brand +"," + v._1.leafcat +"," + v._1.cat1 +"," + v._1.price+ "," + v._2)
     result.saveAsTextFile(args(2))
-
+    
     sc.stop()
   }
 
